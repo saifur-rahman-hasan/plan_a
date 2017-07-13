@@ -24,6 +24,45 @@ body{
 #theme_wrapper.display-show{ display: block !important; }
 
 .center-xy{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.pos-relative{ position: relative; }
+.form-arrow{ display: inline; width: 30px; }
+.text-bold{ font-weight: bold; }
+
+.form-subscribe{
+    padding-top: 50px;
+    padding-left: 2.9em;
+    padding-right: 2.8em;
+    background: url(../images/icons/icon-arrow.png) no-repeat;
+    background-size: 115px;
+    background-position-x: -20px;
+    background-position-y: 140px;
+}
+
+.form-subscribe .form-heading{
+    color: #101126;
+    font-size: 2.3em;
+    text-align: center;
+    position: relative;
+}
+
+.form-subscribe .form-control{
+    padding: 1.2em;
+    font-size: 1.5em;
+    text-align: center;
+    border: 2px solid #101126;
+}
+.form-button{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding: .8em;
+    background-color: #f9ba49;
+    color: white;
+    font-size: 1.3em;
+    box-shadow: none;
+    font-weight: bold;
+}
+.form-button span{ margin-left: 30px; margin-top: -5px; }
 
 /* Section */
 .section{
@@ -48,49 +87,7 @@ body{
 
 
 /* Section - Home */
-.section-home .company-logo img{
-	width: 75%;
-}
-
-
-.section-home .column-left .form-subscribe{
-	padding-top: 50px;
-	padding-left: 2.9em;
-    padding-right: 2.8em;
-}
-
-.section-home .column-left .form-subscribe{
-    background: url(../images/icons/icon-arrow.png) no-repeat;
-    background-size: 115px;
-    background-position-x: -20px;
-    background-position-y: 140px;
-}
-
-.section-home .column-left .form-subscribe .form-heading{
-    color: #101126;
-    font-size: 2.3em;
-    text-align: center;
-    position: relative;
-}
-
-.section-home .column-left .form-subscribe .form-control{
-	padding: 1.2em;
-    font-size: 1.5em;
-    text-align: center;
-    border: 2px solid #101126;
-}
-.section-home .column-left .form-subscribe .form-button{
-	width: 80%;
-    margin: 0 auto;
-    display: block;
-    padding: .8em;
-    background-color: #f9ba49;
-    color: white;
-    font-size: 1.3em;
-    box-shadow: none;
-    font-weight: bold;
-}
-.section-home .column-left .form-subscribe .form-button span{ margin-left: 30px; margin-top: -5px; }
+.section-home .company-logo img{ width: 75%; }
 .section-home .column-right .logo-list{ text-align: center; }
 .section-home .column-right .logo-list a{ display: inline-block; width: 100px; height: 100px; overflow: hidden; }
 .section-home .column-right .logo-list a img{ transform: scale(1); }
@@ -100,13 +97,39 @@ body{
 
 /* Section Services */
 .section-services{
-    height: 100vh;
     background-color: #66BBAF;
     color: white;
+    position: relative;
 }
-.section-services .thumbnail{ border:0; background-color: transparent; padding-left: 1.2em; padding-right: 1.2em; text-align: center; }
+.section-services .thumbnail{ position: relative; border:0; background-color: transparent; padding-left: 1.2em; padding-right: 1.2em; text-align: center; }
 .section-services .thumbnail .caption{ color: white; }
 .section-services .thumbnail .thumb-img{ padding-left: 5em; padding-right: 5em; }
+.section-services .thumbnail .counter{ position: absolute; top: -50px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; font-size: 2em; background-color: white; color: #66BBAF; line-height: 35px; border-radius: 50%; font-weight: bold;  }
+.section-services .counter-hr{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+    width: 66%;
+}
+.section-services.arrow-bototm:after{ border-top-color: #66BBAF !important; }
 
-.form-arrow{ display: inline; width: 30px; }
-.text-bold{ font-weight: bold; }
+/* section description */
+.section-description { background-color: #262227; color: #fff; padding-left: 0;padding-top: 7em;}
+.des-left { padding-left: 0 !important;  }
+.des-left h1 { font-family: 'Roboto Slab', serif; font-style: bold; font-size: 3.2em; }
+.des-left p { font-family: 'Montserrat', sans-serif; font-style: semi-bold; padding: .5em 0; font-size: 1.8em; }
+.des-left p .cyan { color: #54B6B0; }
+.des-right { padding-top: 11em; }
+
+/* Secction Newsletter */
+.setion-newsletter .form-subscribe{
+    background-position-x: -20px;
+    background-position-y: 25px;
+    padding-top: 1em;
+}
+
+/* Section Social */
+.section-social{ background-color: #f5f8fa; }
+.section-social .company-logo img{ width: 70%; }
