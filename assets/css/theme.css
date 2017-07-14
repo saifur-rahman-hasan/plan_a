@@ -6,14 +6,10 @@
 	Author Email 			:	saifur.dohs@gmail.com;
 */
 
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Zilla+Slab:400,700');
 
-.font-Montserrat-Bold{
-    font-family: Montserrat-Bold;
-}
+.font-Montserrat{font-family: 'Montserrat', sans-serif;}
+.font-Zilla-Slab{font-family: 'Zilla Slab', serif; font-weight: 400;}
 
 body{
 	background-color: white;
@@ -66,8 +62,8 @@ body{
 
 /* Section */
 .section{
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 4em;
+	padding-bottom: 4em;
     position: relative;
 }
 .section img{ width: 100%; }
@@ -79,14 +75,15 @@ body{
     left: 50%;
     bottom: -100px;
     transform: translateX(-50%);
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
     border-top: 120px solid #fff;
     z-index: 2;
 }
 
 
 /* Section - Home */
+.section-home{ padding-bottom: 2em }
 .section-home .company-logo img{ width: 75%; }
 .section-home .column-right .logo-list{ text-align: center; }
 .section-home .column-right .logo-list a{ display: inline-block; width: 100px; height: 100px; overflow: hidden; }
@@ -96,71 +93,99 @@ body{
 .section-home .column-right .laptop-heading{ text-align: center; margin-top: 2em; color: #66BBAF; font-weight: bold; }
 
 /* Section Services */
-.section-services{
-    background-color: #66BBAF;
-    color: white;
-    position: relative;
-}
-.section-services .thumbnail{ position: relative; border:0; background-color: transparent; padding-left: 1.2em; padding-right: 1.2em; text-align: center; }
+.section-services{ background-color: #66BBAF; color: white; position: relative; padding-top: 10em; }
+.section-services .thumbnail{ margin-top: 3em; position: relative; border:0; background-color: transparent; padding-left: 1.2em; padding-right: 1.2em; text-align: center; }
 .section-services .thumbnail .caption{ color: white; }
 .section-services .thumbnail .thumb-img{ padding-left: 5em; padding-right: 5em; }
 .section-services .thumbnail .counter{ position: absolute; top: -50px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; font-size: 2em; background-color: white; color: #66BBAF; line-height: 35px; border-radius: 50%; font-weight: bold;  }
 .section-services .counter-hr{
     position: absolute;
-    top: -31px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid white;
     width: 66%;
 }
+.section-services .thumbnail .caption p{ font-size: 1.2em; }
 .section-services.arrow-bototm:after{ border-top-color: #66BBAF !important; }
 
 /* section description */
 .section-description { background-color: #262227; color: #fff; padding-left: 0;padding-top: 7em;}
 .des-left { padding-left: 0 !important;  }
-.des-left h1 { font-family: 'Roboto Slab', serif; font-style: bold; font-size: 3.2em; }
-.des-left p { font-family: 'Montserrat', sans-serif; font-style: semi-bold; padding: .5em 0; font-size: 1.8em; }
-.des-left p .cyan { color: #54B6B0; }
-.des-right { padding-top: 11em; }
+.des-left h1 { font-style: bold; font-size: 4em; margin-bottom: .5em; }
+.des-left p { font-size: 2.3em; }
+.des-left p .cyan { color: #54B6B0; font-weight: bold; }
+.des-right { padding-top: 16em; }
 
 /* Secction Newsletter */
+.setion-newsletter{ background-color: #f5f8fa; }
 .setion-newsletter .form-subscribe{
     background-position-x: -20px;
-    background-position-y: 25px;
-    padding-top: 1em;
+    background-position-y: 60px;
+    padding-top: 3em;
 }
 
 /* Section Social */
-.section-social{ background-color: #f5f8fa; }
 .section-social .company-logo img{ width: 70%; }
-.section-social .section-headline{ color: #66BBAF; font-weight: bold; font-size: 2.4em; }
+.section-social .section-headline{ color: #66BBAF; font-weight: bold; font-size: 4em; }
 .section-social .social-icons-lists{ margin-top: 1.5em; padding-left: 27px; }
 .section-social .social-icons-lists li{ width: 50px; height: 50px; overflow: hidden; }
 .section-social .social-icons-lists li img{ width: 100%; transition: all .4s ease; }
 .section-social .social-icons-lists li:hover img{ transform: scale(.95); }
-.section-social .arrow-box{ background: url(../images/icons/icon-arrow.png) no-repeat; background-size: 70px; background-position-x: -14px; background-position-y: 255px; padding-left: 16px; }
+.section-social .arrow-box{ background: url(../images/icons/icon-arrow.png) no-repeat; background-size: 70px; background-position-x: -14px; background-position-y: 275px; padding-left: 16px; }
 .section-social .column-right p{ font-size: 1.5em; }
 
 /* section-contact */
 .section-contact{
     background: url(../images/logo_and_images/contact-image.jpg) no-repeat;
-    background-size: 45%;
+    background-size: 48%;
     background-position: right;
+    padding-bottom: 0;
+    padding-top: 0;
 }
+.section-contact .form-headline{ color: #262227; margin-top: 0; font-weight: bold; }
 
 .section-contact .form-contact{
     position: relative;
 }
-.section-contact .form-contact{  }
+.section-contact .form-contact{ position: relative; padding-right: 8em; margin-top: 2em; }
+.section-contact .form-contact .form-group{ margin-bottom: 1.5em; }
+.section-contact .form-contact .form-group:last-child{ margin-bottom: 0; }
+.section-contact .form-contact .form-group label{ font-size: 1.3em; color: #54B6B0; }
+.section-contact .form-contact .form-control{
+    border-color: #262227;
+    padding: 1.3em;
+    height: 60px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+}
+.section-contact .form-contact select.form-control{
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.section-contact .form-contact .btn-contact{ 
+    position: absolute; right: -60px; top: 54.5%; transform: translateY(-50%);
+    margin: 0 auto;
+    display: block;
+    padding: .8em 1.5em;
+    background-color: #f9ba49;
+    color: white;
+    font-size: 1.3em;
+    box-shadow: none;
+    font-weight: bold;
+    z-index: 30;
+}
+
 .section-contact{ position: relative; }
 .section-contact .arrow-right{
     position: absolute;
     right: 42%;
-    top: 50%;
+    top: 57%;
     width: 0;
     height: 0;
-    border-top: 140px solid transparent;
-    border-bottom: 140px solid transparent;
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
     border-left: 120px solid white;
     z-index: 30;
     transform: translateY(-50%);
