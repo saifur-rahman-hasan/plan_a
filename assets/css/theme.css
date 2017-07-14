@@ -253,8 +253,54 @@ input::placeholder{ color: #262227 !important; }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (max-width : 768px) {
+    .section-home .column-left{ width: 100%; }
+    .section-home .column-right{ width: 100%; }
+    .section-home .company-logo{ text-align: center; }
+    .section-home .company-logo img{ width: 50% }
+    .section-home .form-subscribe{ padding-top: 17px; }
+    .section-home .form-subscribe .form-heading{ font-size: 1.5em; font-weight: bold; }
+    .section-home .form-subscribe .form-control{ padding: 1.2em; font-size: 1.2em; }
+    .section-home .form-subscribe .form-button{ width: 100%; padding: .4em; font-size: 1.2em; }
+    .section-home .form-subscribe{ background-image: none; }
+    .section-home .column-right .logo-list{ margin-top: 3em; }
+    .section-home .column-right .logo-list a{ width: 125px; height: 125px; }
+    .section-home .column-right > span{ display: none; }
+    .section-home .column-right .image-laptop{ margin-top: 1.8em; }
+    .section-home .column-right .image-laptop img{ transform: scale(1); }
+    .section-home .column-right .laptop-heading{ margin-top: 0; font-size: 2.2em; }
+    .section.arrow-bototm:after{ bottom: -35px; border-left: 120px solid transparent; border-right: 120px solid transparent; border-top: 50px solid #fff; }
+    .section-services{ padding-top: 5em; }
+    .section-services .col-left{ width: 100%; }
+    .section-services .col-right{ width: 100%; margin-left: 0 }
+    
+    .section-services .thumbnail{ padding:0; }
 
+    .section-description .des-left{ padding-left: 1.5em !important; padding-right: 1.5em !important; width: 100%; }
+    .section-description .des-left h1{ font-size: 2.5em; }
+    .section-description .des-left p{ font-size: 1.5em; }
+    .section-description .des-right{ padding-top: 1.5em; width: 100%; }
+    .section-description .des-right .form-button{ display: inline-block; padding-left: 20px; padding-right: 20px; width: 50%; }
+    .setion-newsletter .col-block{ width: 80%; margin-left: 10%;  }
+    .setion-newsletter .form-subscribe{ background-image: none; }
+    .setion-newsletter .form-subscribe .form-control{ padding: 1.2em; font-size: 1.2em; }
+    .setion-newsletter .form-subscribe .form-button{ width: 100%; padding: .4em; font-size: 1.2em; }
+    .section-social .column-left{ width: 100%; }
+    .section-social .column-right{ width: 100%; }
+    .section-social .company-logo img{ width: 50%; }
+    .section-social .section-headline{ font-size: 3em; }
+    .section-social .arrow-box{ background-image: none; }
+    .section-social .column-right p{ font-size: 1.2em; }
+    .section-social .column-right .social-icons-lists{ text-align: center; margin-top: 3em; padding-left: 0; }
+    .section-contact{ background-size: cover; }
+    .section-contact .form-headline{ color: white; margin-top: 2em; text-align: center; font-size: 1.5em; }
+    .section-contact .arrow-right{ display: none; }
+    .section-contact .form-contact{ padding-right: 0; padding-bottom: 4em; }
+    .section-contact .column-left{ width: 100%; padding-left: 8em; padding-right: 8em; }
+    .section-contact .form-contact .form-group label{ font-size: 1.2em; color:#FFF; }
+    .section-contact .form-contact .form-control{ background-color: rgba(255,255,255,.5); padding-top: 8px; padding-bottom: 7px; height: 45px }
+    .section-contact .form-contact .btn-contact{ position: relative; top: 24px; left: 0; margin-top: 20px; width: 100%; padding-top: 8px; padding-bottom: 8px; }
+    .section-contact .form-contact select.form-control{ height: 45px; padding-top: 5px; padding-bottom: 5px }
 }
 
 /* Medium Devices, Desktops */
