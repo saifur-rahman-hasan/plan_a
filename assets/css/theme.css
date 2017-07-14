@@ -133,3 +133,35 @@ body{
 /* Section Social */
 .section-social{ background-color: #f5f8fa; }
 .section-social .company-logo img{ width: 70%; }
+.section-social .section-headline{ color: #66BBAF; font-weight: bold; font-size: 2.4em; }
+.section-social .social-icons-lists{ margin-top: 1.5em; padding-left: 27px; }
+.section-social .social-icons-lists li{ width: 50px; height: 50px; overflow: hidden; }
+.section-social .social-icons-lists li img{ width: 100%; transition: all .4s ease; }
+.section-social .social-icons-lists li:hover img{ transform: scale(.95); }
+.section-social .arrow-box{ background: url(../images/icons/icon-arrow.png) no-repeat; background-size: 70px; background-position-x: -14px; background-position-y: 255px; padding-left: 16px; }
+.section-social .column-right p{ font-size: 1.5em; }
+
+/* section-contact */
+.section-contact{
+    background: url(../images/logo_and_images/contact-image.jpg) no-repeat;
+    background-size: 45%;
+    background-position: right;
+}
+
+.section-contact .form-contact{
+    position: relative;
+}
+.section-contact .form-contact{  }
+.section-contact{ position: relative; }
+.section-contact .arrow-right{
+    position: absolute;
+    right: 42%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-top: 140px solid transparent;
+    border-bottom: 140px solid transparent;
+    border-left: 120px solid white;
+    z-index: 30;
+    transform: translateY(-50%);
+}
