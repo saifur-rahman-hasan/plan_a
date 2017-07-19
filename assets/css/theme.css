@@ -24,8 +24,14 @@ body{
 .form-arrow{ display: inline; width: 30px; }
 .text-bold{ font-weight: bold; }
 
-.navbar-brand{ width: 150px; display: inline-block; }
-.navbar-brand img{ width: 80%; margin-top: -10px }
+.theme-navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-brand{ width: 250px; display: inline-block; }
+.navbar-brand img{ width: 90%; margin-top: -34px }
 
 .form-subscribe{
     padding-top: 50px;
@@ -140,12 +146,12 @@ body{
 
 /* section-contact */
 .section-contact{
-    background: url(../images/logo_and_images/contact-image.jpg) no-repeat;
     background-size: 48%;
     background-position: right;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     padding-top: 0;
 }
+.section-contact .form-img{ position: absolute; right: 0; top: 0; width: 54%; -webkit-clip-path: circle(75.0% at 75% 50%); clip-path: circle(75.0% at 75% 50%); }
 .section-contact .form-headline{ color: #262227; margin-top: 0; font-weight: bold; }
 
 .section-contact .form-contact{
@@ -168,16 +174,12 @@ body{
     padding-bottom: 10px
 }
 .section-contact .form-contact .btn-contact{ 
-    position: absolute; right: -60px; top: 54.5%; transform: translateY(-50%);
-    margin: 0 auto;
-    display: block;
-    padding: .8em 1.5em;
+    padding: .4em 2em;
     background-color: #f9ba49;
     color: white;
     font-size: 1.3em;
     box-shadow: none;
     font-weight: bold;
-    z-index: 30;
 }
 
 .section-contact{ position: relative; }
@@ -236,23 +238,25 @@ input::placeholder{ color: #262227 !important; }
     .section-description .des-left h1{ font-size: 2.5em; }
     .section-description .des-left p{ font-size: 1.5em; }
     .section-description .des-right{ padding-top: 1.5em; }
-    .section-description .des-right .form-button{ width: 100%; }
-    .setion-newsletter .form-subscribe{ background-image: none; }
+    .section-description .des-right .form-button{ width: 100% !important; }
+    .setion-newsletter .form-subscribe{ background-image: none; margin-left: -20px; margin-right: -20px; }
     .setion-newsletter .form-subscribe .form-control{ padding: 1.2em; font-size: 1.2em; }
     .setion-newsletter .form-subscribe .form-button{ width: 100%; padding: .4em; font-size: 1.2em; }
+    .setion-newsletter .headline{ font-size: 2.3em }
     .section-social .company-logo{ display: none; }
     .section-social .section-headline{ font-size: 3em; }
     .section-social .arrow-box{ background-image: none; }
     .section-social .column-right p{ font-size: 1.2em; }
     .section-social .column-right .social-icons-lists{ text-align: center; margin-top: 3em; padding-left: 0; }
-    .section-contact{ background-size: cover; }
-    .section-contact .form-headline{ color: white; margin-top: 2em; text-align: center; font-size: 1.5em; }
+    .section-contact{ background-size: cover; position: relative; }
+    .section-contact .form-headline{ margin-top: 2em; text-align: center; font-size: 1.5em; }
     .section-contact .arrow-right{ display: none; }
-    .section-contact .form-contact{ padding-right: 0; }
-    .section-contact .form-contact .form-group label{ font-size: 1.2em; color:#262227; }
+    .section-contact .form-contact{ padding-right: 0; position: relative; }
+    .section-contact .form-contact .form-group label{ font-size: 1.2em; }
     .section-contact .form-contact .form-control{ background-color: rgba(255,255,255,.5); padding-top: 8px; padding-bottom: 7px; height: 45px }
-    .section-contact .form-contact .btn-contact{ position: relative; top: 24px; left: 0; margin-top: 20px; width: 100%; padding-top: 8px; padding-bottom: 8px; }
+    .section-contact .form-contact .btn-contact{  }
     .section-contact .form-contact select.form-control{ height: 45px; padding-top: 5px; padding-bottom: 5px }
+    .section-contact .form-img{ position: absolute; top: 0; left: 0; width: 100%; filter: grayscale(20%); clip-path: none; opacity: .5; }
 }
 
 /* Small Devices, Tablets */
@@ -284,7 +288,7 @@ input::placeholder{ color: #262227 !important; }
     .section-description .des-left p{ font-size: 1.5em; }
     .section-description .des-right{ padding-top: 1.5em; width: 100%; }
     .section-description .des-right .form-button{ display: inline-block; padding-left: 20px; padding-right: 20px; width: 50%; }
-    .setion-newsletter .col-block{ width: 80%; margin-left: 10%;  }
+    .setion-newsletter .col-block{ width: 100%;  }
     .setion-newsletter .form-subscribe{ background-image: none; }
     .setion-newsletter .form-subscribe .form-control{ padding: 1.2em; font-size: 1.2em; }
     .setion-newsletter .form-subscribe .form-button{ width: 100%; padding: .4em; font-size: 1.2em; }
@@ -296,13 +300,13 @@ input::placeholder{ color: #262227 !important; }
     .section-social .column-right p{ font-size: 1.2em; }
     .section-social .column-right .social-icons-lists{ text-align: center; margin-top: 3em; padding-left: 0; }
     .section-contact{ background-size: cover; }
-    .section-contact .form-headline{ color: white; margin-top: 2em; text-align: center; font-size: 1.5em; }
+    .section-contact .form-headline{ margin-top: 2em; text-align: center; font-size: 1.5em; }
     .section-contact .arrow-right{ display: none; }
     .section-contact .form-contact{ padding-right: 0; padding-bottom: 4em; }
-    .section-contact .column-left{ width: 100%; padding-left: 8em; padding-right: 8em; }
-    .section-contact .form-contact .form-group label{ font-size: 1.2em; color:#FFF; }
+    .section-contact .column-left{ width: 100%; padding-left: 15px; padding-right: 15px; }
+    .section-contact .form-contact .form-group label{ font-size: 1.2em; }
     .section-contact .form-contact .form-control{ background-color: rgba(255,255,255,.5); padding-top: 8px; padding-bottom: 7px; height: 45px }
-    .section-contact .form-contact .btn-contact{ position: relative; top: 24px; left: 0; margin-top: 20px; width: 100%; padding-top: 8px; padding-bottom: 8px; }
+    .section-contact .form-contact .btn-contact{  }
     .section-contact .form-contact select.form-control{ height: 45px; padding-top: 5px; padding-bottom: 5px }
 }
 
